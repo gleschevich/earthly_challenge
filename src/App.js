@@ -13,12 +13,7 @@ function App() {
             <Title/>
             <Carousel/>
             <Footer/>
-
-          
         </div>
-       
-      
-      
     </> 
   )
 }
