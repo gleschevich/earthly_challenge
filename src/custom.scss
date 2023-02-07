@@ -1,10 +1,191 @@
 $body-bg: rgb(227, 114, 114);
 //colors
-$light:#019267;
+$light:#c5023c;
 $secondary:#00C897;
 $danger:#FDFFA9;
 //fonts
 $font-weight-bold: 900;
 
+body{
+    background-image: url("../public/grass.webp");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+//Navbar 
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+}
+#company-name{
+    text-shadow: 1px 1px 2px black;
+    color: white;
+}
+#company-slogan{
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-style: italic;
+}
+
+//recycle logo
+#recycle-logo{
+    height: 60px;
+    width: 60px;
+    margin-left: 95px;
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.nav-link{
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+    font-weight: bold;
+    
+}
+
+//Title 
+.bg-title{
+    background-image: url('../public/grass.webp');
+    background-size: cover;
+    min-width: 60vh;
+    position: relative;
+}
+#title-main{
+    color: #01821d;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+#title-sub{
+   color: white;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+
+//Kit Image and Add cart
+.bg-kitImage span button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kitImage{
+    max-width: 100vh;
+    max-height: 100vh;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 2px;
+}
+.kitImage-hover img{
+    transition: .5s ease;
+}
+
+.kitImage-hover img:hover{
+    box-shadow: 0 0 0 10px #396639;
+    transition: .5s ease;
+}
+
+.input-quantity{
+    text-align: center;
+    width: 50px;
+}
+#btn-add{
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+//Items
+.bg-animated-gradient{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #D61355, #F94A29, #FCE22A,#30E3DF);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+#title-details, #title-contains{
+    color: white;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+#list-details li {
+    color: white;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: bold;
+}
+//Cards title and details
+.card{
+    width: 18rem;
+    background-image: linear-gradient(to bottom, rgb(248, 174, 237),rgb(246, 244, 132));
+    box-shadow: 3px 3px 4px rgb(0, 0, 0);;
+}
+.card-title{
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    text-decoration: underline;
+    font-weight: bolder;
+
+}
+.card-text{
+    visibility: hidden;
+    color: $light;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: center;
+
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card:hover .card-text{
+    visibility: visible;
+}
+
+
+//Responsive
+@media(max-width:1268px){
+    .logo{
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+    }
+    #recycle-logo{
+        margin-left: 10px;
+    }
+
+    .kitImage-hover{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .kitImage{
+        margin-top: 0px;
+        max-height: 70vh;
+        max-width: 80vh;
+    }
+   
+}
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
