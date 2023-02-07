@@ -1,3 +1,17 @@
+Challenge intershala earthly
+Frameworks:
+ReactJS and Bootstrap 5 (customizado with SASS)
+
+Libraries:
+React scroll motion
+React icons
+Fslightbox react
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
