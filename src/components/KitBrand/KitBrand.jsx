@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 import { Animator, ScrollContainer, ScrollPage,batch, MoveOut,Fade } from "react-scroll-motion"
 
-export default function Carousel() {
+export default function KitBrand() {
   const [toggler, setToggler] = useState(false);
 
     return(
